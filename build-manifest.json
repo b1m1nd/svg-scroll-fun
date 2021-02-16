@@ -1,0 +1,33 @@
+{
+  "inputs": {
+    "global.css": {
+      "bytes": 2179,
+      "imports": []
+    },
+    "src/js/index.js": {
+      "bytes": 216,
+      "imports": []
+    }
+  },
+  "outputs": {
+    "../~~bundle~~/global.css": {
+      "imports": [],
+      "inputs": {
+        "global.css": {
+          "bytesInOutput": 1673
+        }
+      },
+      "bytes": 1674
+    },
+    "../~~bundle~~/src/js/index.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "src/js/index.js": {
+          "bytesInOutput": 169
+        }
+      },
+      "bytes": 170
+    }
+  }
+}
