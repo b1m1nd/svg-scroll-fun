@@ -30,26 +30,27 @@ const pathTl = gsap
   })
   .to(dot, { motionPath: { path: '#path', align: '#dot' } })
   .to(dot, { duration: 0.2, scale: 5 }, '<')
+  .to(viewBox, { attr: { viewBox: '0 400 332 514' } }, '<')
   .to(dot, { duration: 0.2, scale: 1 }, '-=0.2')
 
 ScrollTrigger.create({
   trigger: viewBox,
   animation: pathTl,
-  start: 'center center',
+  start: 'top top',
   end: contentHeight,
-  pin: true,
+  pin: viewBox,
   scrub: 1,
 })
 
-const contentTl = gsap
+const welcomeTl = gsap
   .timeline()
   .from('.welcome p', { autoAlpha: 0, x: 100, stagger: 0.3 })
 
 ScrollTrigger.create({
-  trigger: '.contentWrap',
-  animation: contentTl,
-  start: 'top top',
-  end: 'bottom center',
+  trigger: '.welcome',
+  animation: welcomeTl,
+  start: 'center center',
+  end: 'bottom top',
   pin: true,
   scrub: 1,
 })
