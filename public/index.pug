@@ -1,49 +1,30 @@
-doctype html
-html(lang='en')
-  head
-    //  1Mind Solutions
-      -----------
-          __ _   _    _             _ 
-         /  | \_/ \  (_) _ __    __| |
-          | |_   _ \ | || '_ \  / _  |
-          | | \_/ \ \| || | | || (_| |
-          |_|      \/|_||_| |_| \__,_|
-      ---------------------------------
-
-    meta(charset='utf-8')
-    meta(name='viewport' content='width=device-width, initial-scale=1')
-    meta(name='description' content='1M Pug Snowpack Template')
-
-    link(rel='shortcut icon' href='./favicon.ico' type='image/x-icon')
-    link(rel='stylesheet' type='text/css' href='./global.css')
-
-    script(defer type='module' src='./src/js/index.js')
-
-    title 1M Pug SnowPack Template
-
-body
-  header
-    nav.wrap
-      h3 LogoHere
-      ul.canHazBurger
-        li
-        li
-        li
-      ul.navMain.hidden
-        li 
-          | item
-        li item2
-        li item3
-        li item4
-      
+extends ../templates/head.pug
+block header 
   main
     .wrap
-      h1.center This world needs more hellos
+      h1.center This world needs more SVG
 
-      -let a = 6
-      .grid
-        while a > 0
+block content
+  .sceneWrap
 
-          .cell
-            p I am a "Hello World"
-          -a--
+    svg#viewBox(viewBox="-50 -50 1400 2000" fill="none" xmlns="http://www.w3.org/2000/svg")
+
+      path#path(d='M1199 57C1222.42 421.084 52 3.595 52 471c0 434.195 1155.48 145.355 1171.5 598C1241.35 1573.31 52 1175.19 52 1679.5', stroke='#686868')
+
+      g.circles
+        circle(cx='1200.12', cy='54.125', r='54.125',  fill='#453F89')
+        circle(cx='54.125', cy='469.125', r='54.125', fill='#453F89')
+        circle(cx='1220.12', cy='1068.13', r='54.125', fill='#453F89')
+        circle(cx='54.125', cy='1679.12', r='54.125', fill='#453F89')
+
+      circle#dot(cx='1199.5', cy='53.5', transform='rotate(90 1199.5 53.5)', fill='#FF50FF', r='23.5')
+
+    .contentWrap
+
+      article.welcome 
+        p I love to animate
+        p all the things
+
+      article.second 
+        p but make them responsive
+        p this is teh way
