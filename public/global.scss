@@ -158,8 +158,12 @@ nav {
 
 svg {
   position: relative;
-  width: 360px;
+  width: 100%;
   z-index: 1;
+}
+
+#dot {
+  stroke: var(--clr);
 }
 
 .contentWrap {
@@ -175,9 +179,8 @@ article {
 }
 
 .welcome {
-  width: 500px;
+  width: max-content;
   margin: 20% auto;
-  padding: 1rem;
   display: grid;
   font-size: 2rem;
 

@@ -14,12 +14,20 @@ canHazBurger.addEventListener('click', e => {
 
 const circles = document.querySelector('.circles').children
 const PATH_TL = gsap.timeline()
+
 gsap.to('#dot', {
+  scale: 0.5,
+  transformOrigin: 'center',
   ease: 'none',
   motionPath: { path: '#path', align: '#dot' },
   scrollTrigger: {
     target: '#path',
+    trigger: '#viewBox',
+    start: 'top top',
+    end: '2500px bottom',
+    pin: true,
     scrub: 1,
+    markers: true,
   },
 })
 
@@ -28,8 +36,8 @@ gsap.from('.welcome p', {
   x: 100,
   stagger: 0.5,
   scrollTrigger: {
-    trigger: circles[1],
-    pin: '.welcome',
+    trigger: '.welcome',
+    pin: true,
     pinSpacing: false,
     start: 'center center',
     scrub: 1,
@@ -41,8 +49,8 @@ gsap.from('.second p', {
   x: -100,
   stagger: 0.5,
   scrollTrigger: {
-    trigger: circles[2],
-    pin: '.second',
+    trigger: '.second',
+    pin: true,
     pinSpacing: false,
     start: 'center center',
     scrub: 1,
