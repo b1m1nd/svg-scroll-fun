@@ -13,19 +13,23 @@ canHazBurger.addEventListener('click', e => {
 }) */
 
 const circles = document.querySelector('.circles').children
+const dot = document.querySelector('#dot')
+const viewBox = document.querySelector('#viewBox')
+const contentHeight = document.querySelector('.contentWrap').clientHeight
 const PATH_TL = gsap.timeline()
+const clientHeight = document.body.clientHeight
 
-gsap.to('#dot', {
+console.log(contentHeight)
+gsap.to(dot, {
   scale: 0.5,
   transformOrigin: 'center',
   ease: 'none',
   motionPath: { path: '#path', align: '#dot' },
   scrollTrigger: {
-    target: '#path',
     trigger: '#viewBox',
-    start: 'top top',
-    end: '2500px bottom',
     pin: true,
+    start: 'top top',
+    end: `${contentHeight}`,
     scrub: 1,
     markers: true,
   },
@@ -38,7 +42,6 @@ gsap.from('.welcome p', {
   scrollTrigger: {
     trigger: '.welcome',
     pin: true,
-    pinSpacing: false,
     start: 'center center',
     scrub: 1,
   },
@@ -51,8 +54,14 @@ gsap.from('.second p', {
   scrollTrigger: {
     trigger: '.second',
     pin: true,
-    pinSpacing: false,
     start: 'center center',
     scrub: 1,
   },
+})
+
+dot.addEventListener('click', e => {
+  console.dir(e.target)
+  console.log()
+  gsap.to(viewBox, { attr: { viewBox: '260 0 100 100' } })
+  gsap.to(e.target, { scale: 1 })
 })

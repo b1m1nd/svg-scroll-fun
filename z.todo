@@ -1,6 +1,8 @@
 Todo:
   ☐ get a svg on the page with responsiveness
-  ☐ animate a path on scroll on the page
   ☐ link to buttons with markers
-  ☐ add html elements?
   ☐ play with some masking ?
+
+Archive:
+  ✔ animate a path on scroll on the page @done(21-02-16 21:58) @project(Todo)
+  ✔ add html elements? @done(21-02-16 21:58) @project(Todo)
