@@ -1,12 +1,45 @@
 {
   "inputs": {
     "global.css": {
-      "bytes": 2179,
+      "bytes": 2774,
+      "imports": []
+    },
+    "_snowpack/pkg/gsap.js": {
+      "bytes": 196754,
+      "imports": []
+    },
+    "_snowpack/pkg/gsap/MotionPathPlugin.js": {
+      "bytes": 66035,
+      "imports": []
+    },
+    "_snowpack/pkg/gsap/ScrollTrigger.js": {
+      "bytes": 61919,
+      "imports": []
+    },
+    "_snowpack/pkg/gsap/dist/GSDevTools.js": {
+      "bytes": 156793,
       "imports": []
     },
     "src/js/index.js": {
-      "bytes": 216,
-      "imports": []
+      "bytes": 1331,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/gsap.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/gsap/MotionPathPlugin.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/gsap/ScrollTrigger.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/gsap/dist/GSDevTools.js",
+          "kind": "import-statement"
+        }
+      ]
     }
   },
   "outputs": {
@@ -14,20 +47,32 @@
       "imports": [],
       "inputs": {
         "global.css": {
-          "bytesInOutput": 1673
+          "bytesInOutput": 2136
         }
       },
-      "bytes": 1674
+      "bytes": 2137
     },
     "../~~bundle~~/src/js/index.js": {
       "imports": [],
       "exports": [],
       "inputs": {
+        "_snowpack/pkg/gsap.js": {
+          "bytesInOutput": 59990
+        },
+        "_snowpack/pkg/gsap/MotionPathPlugin.js": {
+          "bytesInOutput": 19519
+        },
+        "_snowpack/pkg/gsap/ScrollTrigger.js": {
+          "bytesInOutput": 20136
+        },
+        "_snowpack/pkg/gsap/dist/GSDevTools.js": {
+          "bytesInOutput": 74667
+        },
         "src/js/index.js": {
-          "bytesInOutput": 169
+          "bytesInOutput": 586
         }
       },
-      "bytes": 170
+      "bytes": 177007
     }
   }
 }
