@@ -1,0 +1,22 @@
+extends ../templates/head.pug
+
+block head 
+  meta(name='description' content='grid fun')
+
+  link(rel='stylesheet' type='text/css' href='./src/css/grid-fun.css')
+
+  title Grid layout fun
+
+block content
+  .simmons-grid 
+    .img 
+      img(src="https://picsum.photos/800/900?random=1", alt="some image")
+    .header 
+      h1 some headline 
+    .text Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque, earum explicabo alias officiis unde fuga maxime perferendis culpa mollitia ut quis? Doloribus eos voluptas quia dicta maxime, aliquam quos.
+
+  .fun-grid 
+    .item1 
+    .item2 
+    .item3 
+      h2 some text

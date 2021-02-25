@@ -1,0 +1,42 @@
+.simmons-grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 800px) 1fr;
+  grid-template-rows: 20% 2fr auto auto 1fr;
+  color: #1b1b1b;
+
+  .img {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 5;
+  }
+
+  .header {
+    grid-column: 2;
+    grid-row: 3 / 4;
+    background-color: var(--clr);
+  }
+
+  .text {
+    grid-column: 2;
+    grid-row: 4 / 5;
+    background-color: white;
+  }
+}
+
+.fun-grid {
+  min-height: 400px;
+  display: grid;
+  grid-template-columns: 1fr minmax(100px, 400px) min-content;
+  border: 1px solid var(--clr-black);
+
+  .item1 {
+    background-color: var(--clr);
+  }
+
+  .item2 {
+    background-color: var(--clr-dark);
+  }
+
+  .item3 {
+    background-color: var(--clr-secondary);
+  }
+}
