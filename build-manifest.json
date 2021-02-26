@@ -4,16 +4,33 @@
       "bytes": 2820,
       "imports": []
     },
+    "src/css/grid-fun.css": {
+      "bytes": 1044,
+      "imports": []
+    },
     "_snowpack/pkg/gsap.js": {
       "bytes": 196754,
       "imports": []
     },
-    "_snowpack/pkg/gsap/MotionPathPlugin.js": {
-      "bytes": 66035,
-      "imports": []
-    },
     "_snowpack/pkg/gsap/ScrollTrigger.js": {
       "bytes": 61919,
+      "imports": []
+    },
+    "src/js/grid.js": {
+      "bytes": 625,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/gsap.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/gsap/ScrollTrigger.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/gsap/MotionPathPlugin.js": {
+      "bytes": 66035,
       "imports": []
     },
     "_snowpack/pkg/gsap/dist/GSDevTools.js": {
@@ -21,7 +38,7 @@
       "imports": []
     },
     "src/js/index.js": {
-      "bytes": 3204,
+      "bytes": 3125,
       "imports": [
         {
           "path": "_snowpack/pkg/gsap.js",
@@ -52,6 +69,31 @@
       },
       "bytes": 2174
     },
+    "../~~bundle~~/src/css/grid-fun.css": {
+      "imports": [],
+      "inputs": {
+        "src/css/grid-fun.css": {
+          "bytesInOutput": 896
+        }
+      },
+      "bytes": 897
+    },
+    "../~~bundle~~/src/js/grid.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "_snowpack/pkg/gsap.js": {
+          "bytesInOutput": 59793
+        },
+        "_snowpack/pkg/gsap/ScrollTrigger.js": {
+          "bytesInOutput": 19731
+        },
+        "src/js/grid.js": {
+          "bytesInOutput": 286
+        }
+      },
+      "bytes": 80716
+    },
     "../~~bundle~~/src/js/index.js": {
       "imports": [],
       "exports": [],
@@ -69,10 +111,10 @@
           "bytesInOutput": 74667
         },
         "src/js/index.js": {
-          "bytesInOutput": 1764
+          "bytesInOutput": 1881
         }
       },
-      "bytes": 178185
+      "bytes": 178302
     }
   }
 }
