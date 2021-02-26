@@ -5,7 +5,7 @@
       "imports": []
     },
     "src/css/grid-fun.css": {
-      "bytes": 1044,
+      "bytes": 1071,
       "imports": []
     },
     "_snowpack/pkg/gsap.js": {
@@ -17,7 +17,7 @@
       "imports": []
     },
     "src/js/grid.js": {
-      "bytes": 625,
+      "bytes": 594,
       "imports": [
         {
           "path": "_snowpack/pkg/gsap.js",
@@ -73,10 +73,10 @@
       "imports": [],
       "inputs": {
         "src/css/grid-fun.css": {
-          "bytesInOutput": 896
+          "bytesInOutput": 922
         }
       },
-      "bytes": 897
+      "bytes": 923
     },
     "../~~bundle~~/src/js/grid.js": {
       "imports": [],
@@ -89,10 +89,10 @@
           "bytesInOutput": 19731
         },
         "src/js/grid.js": {
-          "bytesInOutput": 286
+          "bytesInOutput": 256
         }
       },
-      "bytes": 80716
+      "bytes": 80686
     },
     "../~~bundle~~/src/js/index.js": {
       "imports": [],
