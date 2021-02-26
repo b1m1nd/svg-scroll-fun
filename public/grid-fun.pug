@@ -4,22 +4,45 @@ block head
   meta(name='description' content='grid fun')
 
   link(rel='stylesheet' type='text/css' href='./src/css/grid-fun.css')
+  script(defer type='module' src='./src/js/grid.js')
 
   title Grid layout fun
 
 block content
-  .simmons-grid 
-    svg.img(viewBox="0 0 800 900")
-      image(href="https://picsum.photos/1900/1080?random=1" width="800" height="900" preserveAspectRatio="xMinYMin slice")
-      circle(cx="-50" cy="250" r=150 fill="white")
-      circle(cx="850" cy="250" r=150 fill="white")
-    .header 
-      h1 some headline 
-    .text Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque, earum explicabo alias officiis unde fuga maxime perferendis culpa mollitia ut quis? Doloribus eos voluptas quia dicta maxime, aliquam quos.
 
-  h2 These boxes will scale at different times
+  h2.center These boxes will scale at different times
   .fun-grid 
     .item1 
     .item2 This will scale last
     .item3 Wont scale min
     .item4 Wont scale max
+    .item1 
+    .item2 This will scale last
+    .item3 Wont scale min
+    .item4 Wont scale max
+
+  h2.center lets make a grid
+  .simmons-grid 
+    svg.img(viewBox="0 0 800 900")
+      image(href="https://picsum.photos/1900/1080?random=1" width="800" height="900" preserveAspectRatio="xMinYMin slice")
+
+      g.mask
+        rect(x="0" y="0" width="800" height="100")
+        rect(x="0" y="100" width="800" height="100")
+        rect(x="0" y="200" width="800" height="100")
+        rect(x="0" y="300" width="800" height="100")
+        rect(x="0" y="400" width="800" height="100")
+        rect(x="0" y="500" width="800" height="100")
+        rect(x="0" y="600" width="800" height="100")
+        rect(x="0" y="700" width="800" height="100")
+        rect(x="0" y="800" width="800" height="100")
+        rect(x="0" y="900" width="800" height="100")
+        //- rect(x="0" y="1080" width="800" height="100")
+
+      g.parallax
+        circle(cx="-50" cy="250" r=150 )
+        circle(cx="850" cy="250" r=150 )
+
+    .header 
+      h1 some headline 
+    .text Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque, earum explicabo alias officiis unde fuga maxime perferendis culpa mollitia ut quis? Doloribus eos voluptas quia dicta maxime, aliquam quos.
