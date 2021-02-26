@@ -9,14 +9,17 @@ block head
 
 block content
   .simmons-grid 
-    .img 
-      img(src="https://picsum.photos/800/900?random=1", alt="some image")
+    svg.img(viewBox="0 0 800 900")
+      image(href="https://picsum.photos/1900/1080?random=1" width="800" height="900" preserveAspectRatio="xMinYMin slice")
+      circle(cx="-50" cy="250" r=150 fill="white")
+      circle(cx="850" cy="250" r=150 fill="white")
     .header 
       h1 some headline 
     .text Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis cumque, earum explicabo alias officiis unde fuga maxime perferendis culpa mollitia ut quis? Doloribus eos voluptas quia dicta maxime, aliquam quos.
 
+  h2 These boxes will scale at different times
   .fun-grid 
     .item1 
-    .item2 
-    .item3 
-      h2 some text
+    .item2 This will scale last
+    .item3 Wont scale min
+    .item4 Wont scale max

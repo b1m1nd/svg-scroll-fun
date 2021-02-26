@@ -5,12 +5,12 @@ import { GSDevTools } from 'gsap/dist/GSDevTools'
 
 gsap.registerPlugin(MotionPathPlugin, ScrollTrigger, GSDevTools)
 
-/* const nav = document.querySelector('.navMain')
+const nav = document.querySelector('.navMain')
 const canHazBurger = document.querySelector('.canHazBurger')
 
 canHazBurger.addEventListener('click', e => {
   nav.classList.toggle('hidden')
-}) */
+})
 
 const circles = document.querySelector('.circles').children
 const dot = document.querySelector('#dot')
