@@ -1,0 +1,56 @@
+.ease-grid {
+  display: grid;
+  grid-template-columns: 1fr minmax(340px, 800px) 1fr;
+
+  .item {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: var(--clr);
+  }
+
+  .item2 {
+    display: grid;
+    grid-template-columns: 1fr minmax(340px, 800px) 1fr;
+    grid-column: 1 / 4;
+    grid-row: 3;
+    background-color: var(--clr-secondary);
+
+    p {
+      grid-column: 2;
+    }
+  }
+
+  .easeBox {
+    // width: 50%;
+    grid-column: 2;
+    overflow: visible;
+  }
+  #nav {
+    margin-top: 20px;
+  }
+
+  button {
+    border-radius: 10px;
+    background: #fc3;
+    color: #06c;
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+  }
+
+  button:focus {
+    outline: none;
+    background-color: white;
+  }
+
+  #vis-path {
+    stroke: red;
+    stroke-width: 2px;
+    fill: none;
+  }
+
+  .copy-motion-path {
+    visibility: hidden;
+  }
+}
