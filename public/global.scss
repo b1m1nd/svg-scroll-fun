@@ -82,12 +82,6 @@ ul {
 header {
   color: var(--clr-black);
   background: var(--clr);
-  @media (max-width: $minWidthMed) {
-    position: sticky;
-    top: 0;
-    z-index: 420;
-    border-bottom: 1px solid var(--clr-dark);
-  }
 }
 
 .hidden {
