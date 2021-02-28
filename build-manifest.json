@@ -1,15 +1,91 @@
 {
   "inputs": {
     "global.css": {
-      "bytes": 2820,
+      "bytes": 2677,
       "imports": []
     },
-    "src/css/grid-fun.css": {
-      "bytes": 1071,
+    "src/css/ease.css": {
+      "bytes": 822,
       "imports": []
     },
     "_snowpack/pkg/gsap.js": {
       "bytes": 196754,
+      "imports": []
+    },
+    "_snowpack/pkg/common/paths-be08ef48.js": {
+      "bytes": 46218,
+      "imports": []
+    },
+    "_snowpack/pkg/common/matrix-1ed38c36.js": {
+      "bytes": 13570,
+      "imports": []
+    },
+    "_snowpack/pkg/gsap/MotionPathHelper.js": {
+      "bytes": 64032,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/paths-be08ef48.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/matrix-1ed38c36.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/gsap/MotionPathPlugin.js": {
+      "bytes": 11668,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/paths-be08ef48.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/common/matrix-1ed38c36.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/gsap/CustomEase.js": {
+      "bytes": 11172,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/common/paths-be08ef48.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "_snowpack/pkg/gsap/dist/GSDevTools.js": {
+      "bytes": 156793,
+      "imports": []
+    },
+    "src/js/ease.js": {
+      "bytes": 2412,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/gsap.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/gsap/MotionPathHelper.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/gsap/MotionPathPlugin.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/gsap/CustomEase.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/gsap/dist/GSDevTools.js",
+          "kind": "import-statement"
+        }
+      ]
+    },
+    "src/css/grid-fun.css": {
+      "bytes": 1071,
       "imports": []
     },
     "_snowpack/pkg/gsap/ScrollTrigger.js": {
@@ -17,7 +93,7 @@
       "imports": []
     },
     "src/js/grid.js": {
-      "bytes": 594,
+      "bytes": 592,
       "imports": [
         {
           "path": "_snowpack/pkg/gsap.js",
@@ -28,14 +104,6 @@
           "kind": "import-statement"
         }
       ]
-    },
-    "_snowpack/pkg/gsap/MotionPathPlugin.js": {
-      "bytes": 66035,
-      "imports": []
-    },
-    "_snowpack/pkg/gsap/dist/GSDevTools.js": {
-      "bytes": 156793,
-      "imports": []
     },
     "src/js/index.js": {
       "bytes": 3125,
@@ -57,6 +125,23 @@
           "kind": "import-statement"
         }
       ]
+    },
+    "src/css/picture.css": {
+      "bytes": 445,
+      "imports": []
+    },
+    "src/js/picture.js": {
+      "bytes": 776,
+      "imports": [
+        {
+          "path": "_snowpack/pkg/gsap.js",
+          "kind": "import-statement"
+        },
+        {
+          "path": "_snowpack/pkg/gsap/ScrollTrigger.js",
+          "kind": "import-statement"
+        }
+      ]
     }
   },
   "outputs": {
@@ -64,10 +149,50 @@
       "imports": [],
       "inputs": {
         "global.css": {
-          "bytesInOutput": 2173
+          "bytesInOutput": 2068
         }
       },
-      "bytes": 2174
+      "bytes": 2069
+    },
+    "../~~bundle~~/src/css/ease.css": {
+      "imports": [],
+      "inputs": {
+        "src/css/ease.css": {
+          "bytesInOutput": 676
+        }
+      },
+      "bytes": 677
+    },
+    "../~~bundle~~/src/js/ease.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "_snowpack/pkg/gsap.js": {
+          "bytesInOutput": 60033
+        },
+        "_snowpack/pkg/common/paths-be08ef48.js": {
+          "bytesInOutput": 12483
+        },
+        "_snowpack/pkg/common/matrix-1ed38c36.js": {
+          "bytesInOutput": 4284
+        },
+        "_snowpack/pkg/gsap/MotionPathHelper.js": {
+          "bytesInOutput": 29932
+        },
+        "_snowpack/pkg/gsap/MotionPathPlugin.js": {
+          "bytesInOutput": 4365
+        },
+        "_snowpack/pkg/gsap/CustomEase.js": {
+          "bytesInOutput": 3225
+        },
+        "_snowpack/pkg/gsap/dist/GSDevTools.js": {
+          "bytesInOutput": 74595
+        },
+        "src/js/ease.js": {
+          "bytesInOutput": 503
+        }
+      },
+      "bytes": 192135
     },
     "../~~bundle~~/src/css/grid-fun.css": {
       "imports": [],
@@ -101,8 +226,14 @@
         "_snowpack/pkg/gsap.js": {
           "bytesInOutput": 59990
         },
+        "_snowpack/pkg/common/paths-be08ef48.js": {
+          "bytesInOutput": 10870
+        },
+        "_snowpack/pkg/common/matrix-1ed38c36.js": {
+          "bytesInOutput": 4284
+        },
         "_snowpack/pkg/gsap/MotionPathPlugin.js": {
-          "bytesInOutput": 19519
+          "bytesInOutput": 4365
         },
         "_snowpack/pkg/gsap/ScrollTrigger.js": {
           "bytesInOutput": 20136
@@ -115,6 +246,31 @@
         }
       },
       "bytes": 178302
+    },
+    "../~~bundle~~/src/css/picture.css": {
+      "imports": [],
+      "inputs": {
+        "src/css/picture.css": {
+          "bytesInOutput": 376
+        }
+      },
+      "bytes": 377
+    },
+    "../~~bundle~~/src/js/picture.js": {
+      "imports": [],
+      "exports": [],
+      "inputs": {
+        "_snowpack/pkg/gsap.js": {
+          "bytesInOutput": 59793
+        },
+        "_snowpack/pkg/gsap/ScrollTrigger.js": {
+          "bytesInOutput": 19731
+        },
+        "src/js/picture.js": {
+          "bytesInOutput": 420
+        }
+      },
+      "bytes": 80850
     }
   }
 }
