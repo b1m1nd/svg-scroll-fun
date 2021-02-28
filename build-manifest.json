@@ -127,11 +127,11 @@
       ]
     },
     "src/css/picture.css": {
-      "bytes": 445,
+      "bytes": 541,
       "imports": []
     },
     "src/js/picture.js": {
-      "bytes": 872,
+      "bytes": 1026,
       "imports": [
         {
           "path": "_snowpack/pkg/gsap.js",
@@ -251,10 +251,10 @@
       "imports": [],
       "inputs": {
         "src/css/picture.css": {
-          "bytesInOutput": 376
+          "bytesInOutput": 456
         }
       },
-      "bytes": 377
+      "bytes": 457
     },
     "../~~bundle~~/src/js/picture.js": {
       "imports": [],
@@ -267,10 +267,10 @@
           "bytesInOutput": 19731
         },
         "src/js/picture.js": {
-          "bytesInOutput": 481
+          "bytesInOutput": 608
         }
       },
-      "bytes": 80911
+      "bytes": 81038
     }
   }
 }
