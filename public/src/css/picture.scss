@@ -2,6 +2,16 @@
   display: grid;
   grid-template-columns: 1fr minmax(340px, 800px) 1fr;
 
+  .pictureBox {
+    min-height: 100vh;
+    grid-column: 2;
+    overflow: visible;
+  }
+
+  .sun {
+    transform-origin: '50% 50%';
+  }
+
   .item {
     grid-column: 2;
     grid-row: 2;
@@ -18,9 +28,5 @@
     p {
       grid-column: 2;
     }
-  }
-
-  .pictureBox {
-    grid-column: 2;
   }
 }
