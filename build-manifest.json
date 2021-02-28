@@ -1,7 +1,7 @@
 {
   "inputs": {
     "global.css": {
-      "bytes": 2677,
+      "bytes": 2723,
       "imports": []
     },
     "src/css/ease.css": {
@@ -127,11 +127,11 @@
       ]
     },
     "src/css/picture.css": {
-      "bytes": 541,
+      "bytes": 556,
       "imports": []
     },
     "src/js/picture.js": {
-      "bytes": 1026,
+      "bytes": 1027,
       "imports": [
         {
           "path": "_snowpack/pkg/gsap.js",
@@ -149,10 +149,10 @@
       "imports": [],
       "inputs": {
         "global.css": {
-          "bytesInOutput": 2068
+          "bytesInOutput": 2102
         }
       },
-      "bytes": 2069
+      "bytes": 2103
     },
     "../~~bundle~~/src/css/ease.css": {
       "imports": [],
@@ -251,10 +251,10 @@
       "imports": [],
       "inputs": {
         "src/css/picture.css": {
-          "bytesInOutput": 456
+          "bytesInOutput": 467
         }
       },
-      "bytes": 457
+      "bytes": 468
     },
     "../~~bundle~~/src/js/picture.js": {
       "imports": [],
@@ -267,10 +267,10 @@
           "bytesInOutput": 19731
         },
         "src/js/picture.js": {
-          "bytesInOutput": 608
+          "bytesInOutput": 595
         }
       },
-      "bytes": 81038
+      "bytes": 81025
     }
   }
 }
