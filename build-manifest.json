@@ -131,7 +131,7 @@
       "imports": []
     },
     "src/js/picture.js": {
-      "bytes": 776,
+      "bytes": 872,
       "imports": [
         {
           "path": "_snowpack/pkg/gsap.js",
@@ -267,10 +267,10 @@
           "bytesInOutput": 19731
         },
         "src/js/picture.js": {
-          "bytesInOutput": 420
+          "bytesInOutput": 481
         }
       },
-      "bytes": 80850
+      "bytes": 80911
     }
   }
 }
