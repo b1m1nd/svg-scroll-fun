@@ -127,7 +127,7 @@
       ]
     },
     "src/css/picture.css": {
-      "bytes": 556,
+      "bytes": 555,
       "imports": []
     },
     "src/js/picture.js": {
@@ -251,10 +251,10 @@
       "imports": [],
       "inputs": {
         "src/css/picture.css": {
-          "bytesInOutput": 467
+          "bytesInOutput": 466
         }
       },
-      "bytes": 468
+      "bytes": 467
     },
     "../~~bundle~~/src/js/picture.js": {
       "imports": [],
