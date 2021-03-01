@@ -1,6 +1,7 @@
 .picture-grid {
   display: grid;
   grid-template-columns: 1fr minmax(340px, 800px) 1fr;
+  z-index: -1;
 
   .pictureBox {
     min-height: 100vh;
@@ -13,17 +14,11 @@
   }
 
   .item {
-    grid-column: 2;
-    grid-row: 2;
-    background-color: var(--clr);
-  }
-
-  .item2 {
     display: grid;
     grid-template-columns: 1fr minmax(340px, 800px) 1fr;
     grid-column: 1 / 4;
-    grid-row: 3;
-    background-color: var(--clr-secondary);
+    grid-row: 2;
+    background-color: #b9b9b9;
 
     p {
       grid-column: 2;

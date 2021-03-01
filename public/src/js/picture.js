@@ -24,16 +24,16 @@ const zoomTl = gsap
     },
     0,
   )
-  .to(sun, { scale: 0.25, x: -45, y: 15 }, 0)
-  .to(far, { scale: 0.25, x: 850, y: 165 }, 0)
-  .to(mid, { scale: 1.35, x: -175, y: -150 }, 0)
-  .to(front, { scale: 1, x: -100 }, 0)
+  .to(sun, { scale: 0.25, x: -45, y: 15 }, '<')
+  .to(far, { scale: 0.25, x: 850, y: 80 }, '<')
+  .to(mid, { scale: 1.45, x: -325, y: -75 }, '< +0.075')
+  .to(front, { scale: 1.25, x: -500 }, '<')
 
 ScrollTrigger.create({
   trigger: '.picture-grid',
   animation: zoomTl,
   start: 'top top',
-  end: 'bottom+=1000 top',
+  end: 'bottom+=500 top',
   pin: true,
   scrub: 1,
   markers: true,
